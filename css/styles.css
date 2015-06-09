@@ -149,8 +149,19 @@ a img {
   color: #595959;
   word-spacing: 5px;
 }
+.container .container-note {
+  font-weight: 500;
+  color: #6b6b6b;
+  width: 80%;
+}
+#author {
+  font-weight: 600;
+  color: #303030;
+  font-size: 18px;
+}
 #notifications {
   font-size: 22px;
+  color: #409AC4;
 }
 #navigation-wrapper {
   background: #fff;
