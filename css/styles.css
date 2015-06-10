@@ -124,10 +124,14 @@ a img {
 :focus {
   outline: 0;
 }
+body {
+  font: Arial;
+}
 .navbar-default,
 .navbar-nav li a {
-  line-height: 20px;
-  height: 20px;
+  line-height: 45px;
+  height: 45px;
+  font-size: 16px;
   min-height: 0px;
   margin-bottom: 0px;
   padding: 0px 25px 0px 0px;
@@ -137,27 +141,34 @@ a img {
   margin: 0 auto;
 }
 .container-notice {
-  margin-top: 20px;
+  margin-top: 24px;
+  margin-bottom: 11px;
+  padding: 0px 30px;
 }
 .number {
   color: #409AC4;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
+  margin-left: 20px;
+  display: inline-block;
 }
 .date {
-  font-size: 24px;
+  font-size: 22px;
   color: #595959;
   word-spacing: 5px;
+  padding: 10px;
 }
-.container .container-note {
-  font-weight: 500;
-  color: #6b6b6b;
-  width: 80%;
+.container-note {
+  font-size: 14px;
+  color: #484848;
+  padding-left: 120px;
+}
+.container-note-date {
+  color: #999999;
+  padding-top: 5px;
 }
 #author {
-  font-weight: 600;
-  color: #303030;
-  font-size: 18px;
+  font-weight: bold;
 }
 #notifications {
   font-size: 22px;
@@ -181,7 +192,8 @@ a img {
 }
 #input-wrapper {
   padding: 10px;
-  background: #F3F3F3;
+  height: 60px;
+  background: #F4F4F4;
   box-sizing: border-box;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -192,7 +204,11 @@ a img {
 }
 #input-note {
   width: 100%;
-  padding: 8px;
+  height: 40px;
+  padding: 15px 10px 15px 10px;
+  box-sizing: border-box;
   border: 1px solid #CDCDCD;
   color: #A0A0A0;
+  font-size: 16px;
+  font-style: normal;
 }

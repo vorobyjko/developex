@@ -61,6 +61,15 @@ a img {
 
 
 @font-color : #6B6B6B;
+@font : Arial;
+@nav_font_size : 16px;
+@nav_height: 45px;
+@notes-font-size: 14px;
+
+body {
+	font: @font;
+}
+
 
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
@@ -75,8 +84,9 @@ a img {
 
 .navbar-default,
 .navbar-nav li a {
-    line-height: 20px;
-    height: 20px;
+    line-height: @nav_height;
+    height: @nav_height;
+    font-size: @nav_font_size;
     min-height: 0px;
     margin-bottom: 0px;
     padding: 0px 25px 0px 0px;
@@ -89,31 +99,39 @@ a img {
 }
 
 .container-notice {
-	margin-top: 20px;
+	margin-top: 24px;
+	margin-bottom: 11px;
+	padding: 0px 30px;
 }
 
 .number {
 	color :#409AC4;
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: bold;
+	margin-left: 20px;
+	display: inline-block;
 }
 
 .date {
-	font-size: 24px;
+	font-size: 22px;
 	color: #595959;
 	word-spacing: 5px;
+	padding: 10px;
 }
 
-.container .container-note {
-	font-weight: 500;
-	color: @font-color;
-	width: 80%; 
+.container-note {
+	font-size: @notes-font-size;
+	color: #484848;
+	padding-left: 120px;
 }
 
-#author {
-	font-weight: 600;
-	color: #303030;
-	font-size: 18px;
+.container-note-date {
+	color: #999999;
+	padding-top: 5px; 
+}
+
+ #author {
+	font-weight: bold;
 }
 
 
@@ -147,14 +165,19 @@ a img {
 
 #input-wrapper {
 	padding: 10px;
-	background: #F3F3F3;
+	height: 60px;
+	background: #F4F4F4;
 	box-sizing: border-box;
 	.border-radius();
 }
 
 #input-note {
 	width: 100%;
-	padding: 8px;
+	height: 40px;
+	padding: 15px 10px 15px 10px;
+	box-sizing: border-box;
 	border: 1px solid #CDCDCD;
 	color: #A0A0A0;
+	font-size: @nav_font_size;
+	font-style: normal;
 }

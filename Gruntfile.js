@@ -42,6 +42,7 @@ module.exports = function(grunt) {
 			options: {
 				livereload: true
 			},
+
 			scripts: {
 				files : ["js/*.js"] ,
 				tasks : ["uglify"]
@@ -59,14 +60,28 @@ module.exports = function(grunt) {
 					nospawn : true
 				}
 			}
+		},
+
+		express: {
+			all : {
+				options: {
+					port: 9000,
+					hostname: "localhost",
+					bases: ["."],
+					livereload: true
+				}
+			}
 		}
 
 	});
 
 	grunt.loadNpmTasks("grunt-contrib-uglify");
 	grunt.loadNpmTasks("grunt-contrib-cssmin");
-	grunt.loadNpmTasks("grunt-contrib-less");
+	grunt.loadNpmTasks("grunt-contrib-less")
 	grunt.loadNpmTasks("grunt-contrib-watch");
+	//grunt.loadNpmTasks("grunt-express");
+	
 
 	grunt.registerTask("default", ['uglify', 'less', 'cssmin', 'watch'])
+	//grunt.registerTask("server", ['express', 'watch'])
 };
